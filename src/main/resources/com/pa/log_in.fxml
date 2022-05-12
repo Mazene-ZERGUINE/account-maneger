@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="742.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pa.LogIn">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="246.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="471.0" fitWidth="363.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo_400x600.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="475.0" prefWidth="469.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="TOP" layoutX="176.0" layoutY="63.0" opacity="0.72" text="Log in" textFill="#52a7c6" textOverrun="CLIP">
+               <font>
+                  <Font name="Pagul" size="45.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="40.0" layoutY="198.0" opacity="0.72" text="email" textFill="#52a7c6" textOverrun="CLIP">
+               <font>
+                  <Font name="Pagul" size="20.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="40.0" layoutY="289.0" opacity="0.72" text="password" textFill="#52a7c6" textOverrun="CLIP">
+               <font>
+                  <Font name="Pagul" size="20.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <TextField fx:id="email" layoutX="145.0" layoutY="195.0" prefHeight="30.0" prefWidth="200.0" />
+            <PasswordField fx:id="password" layoutX="145.0" layoutY="286.0" prefHeight="30.0" prefWidth="200.0" />
+            <Button fx:id="log_in" layoutX="162.0" layoutY="386.0" mnemonicParsing="false" onAction="#logIn" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #52a7c6;" text="Log in" textFill="WHITE" />
+            <Label fx:id="error_message" layoutX="135.0" layoutY="151.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

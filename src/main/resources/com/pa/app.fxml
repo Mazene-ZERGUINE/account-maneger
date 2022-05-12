@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1158.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pa.App">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="927.0" prefWidth="1541.0">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="329.0">
+               <image>
+                  <Image url="@../img/logo_400x800.png" />
+               </image>
+            </ImageView>
+            <VBox layoutY="133.0" opacity="0.29" prefHeight="794.0" prefWidth="329.0" style="-fx-background-color: #000000;">
+               <children>
+                  <AnchorPane prefHeight="194.0" prefWidth="329.0" />
+                  <Button id="liste" fx:id="profile" mnemonicParsing="false" onAction="#changeToApp" prefHeight="80.0" prefWidth="329.0" style="-fx-background-color: #000000;" styleClass="list" stylesheets="@../css/style.css" text="Profile" textFill="#52a7c6">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button id="list" fx:id="prestation" mnemonicParsing="false" onAction="#changeToPrestation" prefHeight="73.0" prefWidth="329.0" style="-fx-background-color: #000000;" stylesheets="@../css/style.css" text="Prestation" textFill="#52a7c6">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button id="liste" fx:id="articles" mnemonicParsing="false" onAction="#changeToArticles" prefHeight="73.0" prefWidth="329.0" style="-fx-background-color: #000000;" stylesheets="@../css/style.css" text="Articles" textFill="#52a7c6">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button id="liste" fx:id="euro" mnemonicParsing="false" onAction="#changeToPoints" prefHeight="73.0" prefWidth="329.0" style="-fx-background-color: #000000;" stylesheets="@../css/style.css" text="Points-Euro" textFill="#52a7c6">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="327.0" layoutY="132.0" prefHeight="80.0" prefWidth="1293.0" style="-fx-background-color: #303030;">
+               <children>
+                  <Label layoutX="570.0" layoutY="20.0" opacity="0.43" text="Profile" textFill="#52a7c6">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Label layoutX="577.0" layoutY="39.0" opacity="0.35" text="Gestionnaire de compte comerçant" textFill="#52a7c6">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="375.0" layoutY="261.0" prefHeight="538.0" prefWidth="1163.0" style="-fx-border-color: #52a7c6; -fx-border-radius: 20;">
+               <children>
+                  <Label fx:id="companyName" alignment="CENTER" contentDisplay="CENTER" layoutX="394.0" layoutY="71.0" style="-fx-text-alignment: center;" text="Bienvenu JAVA" textFill="WHITE">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="companyEmail" layoutX="55.0" layoutY="247.0" text="email : mmazenezeguine@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="companyPhone" layoutX="56.0" layoutY="302.0" text="numéro tel : 0781878843" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="companyAdress" layoutX="55.0" layoutY="424.0" text="Adresse : 6 rue christoph columb" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="companyCity" layoutX="744.0" layoutY="248.0" text="Ville : Massy" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="companyCode" layoutX="737.0" layoutY="302.0" text="Code postal" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="companyContacte" layoutX="61.0" layoutY="368.0" text="Contact : john doe" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="810.0" layoutY="835.0" text="LoyaltyBoost">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.07142857142857142" startY="0.6095238095238096">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.023148147389292717" green="0.1511533409357071" blue="0.2631579041481018" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

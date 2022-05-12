@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1158.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pa.Article">
+    <children>
+        <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="927.0" prefWidth="1526.0">
+            <children>
+                <ImageView fitHeight="133.0" fitWidth="329.0">
+                    <image>
+                        <Image url="@../img/logo_400x800.png" />
+                    </image>
+                </ImageView>
+                <VBox layoutY="133.0" opacity="0.29" prefHeight="794.0" prefWidth="329.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <AnchorPane prefHeight="194.0" prefWidth="329.0" />
+                        <Button id="liste" fx:id="profile" mnemonicParsing="false" onAction="#changeToApp" prefHeight="80.0" prefWidth="329.0" style="-fx-background-color: #000000;" styleClass="list" stylesheets="@../css/style.css" text="Profile" textFill="#52a7c6">
+                            <font>
+                                <Font size="26.0" />
+                            </font>
+                        </Button>
+                        <Button id="list" fx:id="prestation" mnemonicParsing="false" onAction="#changeToPrestation" prefHeight="73.0" prefWidth="329.0" style="-fx-background-color: #000000;" stylesheets="@../css/style.css" text="Prestation" textFill="#52a7c6">
+                            <font>
+                                <Font size="26.0" />
+                            </font>
+                        </Button>
+                        <Button id="liste" fx:id="articles" mnemonicParsing="false" onAction="#changeToArticles" prefHeight="73.0" prefWidth="329.0" style="-fx-background-color: #000000;" stylesheets="@../css/style.css" text="Articles" textFill="#52a7c6">
+                            <font>
+                                <Font size="26.0" />
+                            </font>
+                        </Button>
+                        <Button id="liste" fx:id="euro" mnemonicParsing="false" onAction="#changeToPoints" prefHeight="73.0" prefWidth="329.0" style="-fx-background-color: #000000;" stylesheets="@../css/style.css" text="Points-Euro" textFill="#52a7c6">
+                            <font>
+                                <Font size="26.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <AnchorPane layoutX="327.0" layoutY="132.0" prefHeight="79.0" prefWidth="1382.0" style="-fx-background-color: #303030;">
+                    <children>
+                        <Label layoutX="579.0" layoutY="19.0" opacity="0.43" text="Articles" textFill="#52a7c6">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+                <Label layoutX="577.0" layoutY="39.0" opacity="0.35" text="Gestionnaire de compte comerçant" textFill="#52a7c6">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Label>
+            <TableView fx:id="tabelView" layoutX="396.0" layoutY="356.0" prefHeight="494.0" prefWidth="1131.0">
+              <columns>
+                <TableColumn fx:id="articleCode" prefWidth="164.6666259765625" text="Code Article" />
+                <TableColumn fx:id="articleName" minWidth="0.0" prefWidth="254.6666259765625" text="Nom" />
+                  <TableColumn fx:id="articleCatégorie" prefWidth="283.3333740234375" text="Catégorie" />
+                  <TableColumn fx:id="articlePrice" prefWidth="209.0" text="Prix" />
+                  <TableColumn fx:id="articleQiantity" prefWidth="217.0" text="Quantité" />
+              </columns>
+            </TableView>
+            <Button fx:id="codeArticke" layoutX="404.0" layoutY="249.0" mnemonicParsing="false" onAction="#refresh" prefHeight="81.0" prefWidth="87.0" style="-fx-background-color: lightgrey;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="430.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-refresh-30.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="517.0" layoutY="248.0" mnemonicParsing="false" onAction="#add" prefHeight="81.0" prefWidth="87.0" style="-fx-background-color: lightgrey;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="629.0" layoutY="248.0" mnemonicParsing="false" onAction="#delete" prefHeight="81.0" prefWidth="87.0" style="-fx-background-color: lightgrey;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="741.0" layoutY="248.0" mnemonicParsing="false" onAction="#update" prefHeight="81.0" prefWidth="87.0" style="-fx-background-color: lightgrey;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="55.0" fitWidth="49.0" layoutX="537.0" layoutY="264.0">
+               <image>
+                  <Image url="@../img/icons8-plus-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="647.0" layoutY="270.0">
+               <image>
+                  <Image url="@../img/icons8-supprimer-pour-toujours-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="762.0" layoutY="272.0">
+               <image>
+                  <Image url="@../img/icons8-mettre-à-jour-l'étiquette-48.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
